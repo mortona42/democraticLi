@@ -1,0 +1,13 @@
+field.formatter.settings.linked_and_wrapped:
+  type: mapping
+  label: 'Entity reference field formatter settings.'
+  mapping:
+    linked:
+      type: boolean
+      label: 'Linked'
+    tag:
+      type: string
+      label: 'Tag'
+    classes:
+      type: string
+      label: 'Classes'

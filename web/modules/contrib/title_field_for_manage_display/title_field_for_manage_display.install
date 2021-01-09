@@ -1,0 +1,44 @@
+<?php
+use \Drupal\node\Entity\NodeType;
+use \Drupal\field\Entity;
+use \Drupal\field\Entity\FieldStorageConfig;
+use \Drupal\field\Entity\FieldConfig;
+
+/**
+ * @file
+ * Create table node__field_display_title().
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function title_field_for_manage_display_uninstall() {
+  $title_replacement_field = 'field_display_title';
+
+  // Deleting Field storage.
+  $field_storage_config = FieldStorageConfig::loadByName('node', $title_replacement_field);
+  if (!empty($field_storage_config)) {
+    $field_storage_config->delete();
+  }
+
+  // Deleting field.
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $bundle_id = $bundle->Id();
+    // Bundle fields.
+    if ($bundle_id != 'webform') {
+      $field_config = FieldConfig::loadByName('node', $bundle_id, $title_replacement_field);
+      if (!empty($field_config)) {
+
+        $field_config->delete();
+        \Drupal::service('entity_display.repository')
+          ->getFormDisplay('node', $bundle_id, 'default')
+          ->removeComponent($title_replacement_field)
+          ->save();
+        \Drupal::service('entity_display.repository')
+          ->getViewDisplay('node', $bundle_id, 'default')
+          ->removeComponent($title_replacement_field)
+          ->save();
+      }
+    }
+  }
+}
