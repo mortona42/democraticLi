@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '60acfd3842efac3f1636d8a780cd6c0f8d4b8bf6',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -605,6 +605,15 @@
         0 => '9.1.2',
       ),
     ),
+    'drupal/fences' => 
+    array (
+      'pretty_version' => '2.0.0-rc1',
+      'version' => '2.0.0.0-RC1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0-rc1',
+    ),
     'drupal/field' => 
     array (
       'replaced' => 
@@ -852,12 +861,12 @@
     ),
     'drupal/recommended-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '60acfd3842efac3f1636d8a780cd6c0f8d4b8bf6',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1218,8 +1227,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '^1.0',
+        0 => '^1.0',
+        1 => '1.0',
       ),
     ),
     'psr/event-dispatcher-implementation' => 
