@@ -1,0 +1,9 @@
+name: Fences
+description: Alter wrapping markup of fields.
+core_version_requirement: ^8.7.7 || ^9
+type: module
+
+# Information added by Drupal.org packaging script on 2020-05-26
+version: '8.x-2.0-rc1'
+project: 'fences'
+datestamp: 1590457542

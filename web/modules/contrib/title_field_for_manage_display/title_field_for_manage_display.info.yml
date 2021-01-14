@@ -1,0 +1,13 @@
+name: 'Title Field For Manage Display'
+type: module
+description: 'Creates a title text field with title formatter for manage display.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2020-11-18
+version: '8.x-2.0'
+project: 'title_field_for_manage_display'
+datestamp: 1605713555

@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * @file
+ * Contains title_field_for_manage_display.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\Entity\NodeType;
+use Drupal\field\Entity;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+
+/**
+ * Implements hook_help().
+ */
+function title_field_for_manage_display_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the title_field_for_manage_display module.
+    case 'help.page.title_field_for_manage_display':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Creates a text formatter that works the same way as the title formatter.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_entity_bundle_info_alter().
+ */
+function title_field_for_manage_display_entity_bundle_info_alter(&$bundles) {
+
+  if (\Drupal::service('config.installer')->isSyncing()) {
+    return;
+  }
+
+  $title_replacement_field = 'field_display_title';
+  $title_replacement_field_label = 'Title';
+
+  // Field storage.
+  $field_storage_config = FieldStorageConfig::loadByName('node', $title_replacement_field);
+  if (empty($field_storage_config)) {
+    \Drupal\field\Entity\FieldStorageConfig::create(array(
+      'field_name' => $title_replacement_field,
+      'entity_type' => 'node',
+      'type' => 'string',
+      'description' => 'Manage Display Title',
+      'translatable' => TRUE
+    ))->save();
+  }
+  
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $bundle_id = $bundle->Id();
+    // Bundle fields.
+    if ($bundle_id != 'webform') {
+      $field_config = FieldConfig::loadByName('node', $bundle_id, $title_replacement_field);
+      if (empty($field_config)) {
+        \Drupal\field\Entity\FieldConfig::create([
+          'field_name' => $title_replacement_field,
+          'entity_type' => 'node',
+          'bundle' => $bundle_id,
+          'label' => $title_replacement_field_label,
+          'field_storage' => $field_storage_config,
+        ])->save();
+        \Drupal::service('entity_display.repository')
+          ->getFormDisplay('node', $bundle_id, 'default')
+          ->removeComponent($title_replacement_field)
+          ->save();
+        \Drupal::service('entity_display.repository')
+          ->getViewDisplay('node', $bundle_id, 'default')
+          ->removeComponent($title_replacement_field)
+          ->save();
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function title_field_for_manage_display_node_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  $node_bundle = $entity->getType();
+  if ($entity->hasField('field_display_title')) {
+    $title = $entity->get('title')->getValue();
+    $entity->set('field_display_title', $title);
+  }
+}

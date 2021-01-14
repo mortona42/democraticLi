@@ -14,12 +14,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '158e55cc95078a3ab7f750438f76a693e91c3eac',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -618,6 +618,15 @@ private static $installed = array (
         0 => '9.1.2',
       ),
     ),
+    'drupal/fences' => 
+    array (
+      'pretty_version' => '2.0.0-rc1',
+      'version' => '2.0.0.0-RC1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0-rc1',
+    ),
     'drupal/field' => 
     array (
       'replaced' => 
@@ -865,12 +874,12 @@ private static $installed = array (
     ),
     'drupal/recommended-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '158e55cc95078a3ab7f750438f76a693e91c3eac',
     ),
     'drupal/responsive_image' => 
     array (
@@ -976,6 +985,15 @@ private static $installed = array (
       array (
         0 => '9.1.2',
       ),
+    ),
+    'drupal/title_field_for_manage_display' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0',
     ),
     'drupal/toolbar' => 
     array (
@@ -1231,8 +1249,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '^1.0',
+        0 => '^1.0',
+        1 => '1.0',
       ),
     ),
     'psr/event-dispatcher-implementation' => 
