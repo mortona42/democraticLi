@@ -1,6 +1,6 @@
 name: DemocraticLi
 type: theme
-base theme: false
+base theme: classy
 description: DemocraticLi theme.
 package: Custom
 core: 8.x
