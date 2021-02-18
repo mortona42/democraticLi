@@ -1,0 +1,38 @@
+/*General*/
+*{
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+/*Header*/
+header {
+  height: 20px;
+  width: 100%;
+}
+
+header span {
+    font-family: 'Noto Serif', serif, sans-serif;
+}
+
+ul {
+  text-decoration: none;
+}
+
+/* Left Section */
+.leftSidebar {
+
+}
+
+/* Main Section */
+.mainSection {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* Right Section */
+.rightSidebar {
+  flex-flow: column wrap;
+}
