@@ -241,6 +241,16 @@ $databases = [];
  *   ];
  * @endcode
  */
+$databases['default']['default'] = array (
+  'database' => 'drupal9',
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'prefix' => '',
+  'host' => 'database',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
 
 /**
  * Location of the site configuration files.
@@ -775,18 +785,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
-$databases['default']['default'] = array (
-  'database' => 'drupal9',
-  'username' => 'drupal9',
-  'password' => 'drupal9',
-  'prefix' => '',
-  'host' => 'database',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-// $settings['config_sync_directory'] = 'sites/default/files/config_5H-8qbwHEr5e0F-tUBHdIEQUp7XCEw57v9Lwagahe92gP5HM1ga5Sam3_8EliW9pcxTfYLakhw/sync';
