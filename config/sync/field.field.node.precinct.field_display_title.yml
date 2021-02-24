@@ -1,0 +1,19 @@
+uuid: 0aac2a6e-41c6-4dfd-9cbb-0b48bfccd3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_title
+    - node.type.precinct
+id: node.precinct.field_display_title
+field_name: field_display_title
+entity_type: node
+bundle: precinct
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

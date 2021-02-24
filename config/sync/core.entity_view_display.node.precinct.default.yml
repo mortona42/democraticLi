@@ -1,0 +1,39 @@
+uuid: 5314c368-5a07-44e1-8e5b-a5bb595eb614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.precinct.body
+    - field.field.node.precinct.field_city_council_district
+    - field.field.node.precinct.field_display_title
+    - node.type.precinct
+  module:
+    - text
+    - user
+id: node.precinct.default
+targetEntityType: node
+bundle: precinct
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_city_council_district:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

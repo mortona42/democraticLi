@@ -1,0 +1,23 @@
+uuid: 94436c85-8d9f-4119-9a52-605bc47436ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.precinct
+  module:
+    - text
+id: node.precinct.body
+field_name: body
+entity_type: node
+bundle: precinct
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

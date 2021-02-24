@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/fences": "^2.0@RC",
+        "drupal/stage_file_proxy": "^1.1",
         "drupal/title_field_for_manage_display": "^2.0",
         "drush/drush": "^10.3"
     },

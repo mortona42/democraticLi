@@ -1,0 +1,31 @@
+uuid: ea0d128c-b042-4bd8-93de-db0e870ac549
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - democraticli
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: democraticli_page_title
+theme: democraticli
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+      position: position
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

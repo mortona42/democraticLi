@@ -1,0 +1,23 @@
+uuid: 722a5a14-dcd8-4855-a5b5-bacbb12b0db8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source
+    - node.type.activity
+  module:
+    - link
+id: node.activity.field_source
+field_name: field_source
+entity_type: node
+bundle: activity
+label: Source
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

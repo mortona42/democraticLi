@@ -1,0 +1,22 @@
+uuid: 265054a4-3eca-4bf1-8946-92ed12e11c57
+langcode: en
+status: true
+dependencies:
+  theme:
+    - democraticli
+_core:
+  default_config_hash: V7GM1m6Qh500cQE7LWZV8lRuwLqXdjR0S2kSk8pEv6g
+id: democraticli_secondary_local_tasks
+theme: democraticli
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

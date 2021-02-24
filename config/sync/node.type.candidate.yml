@@ -1,0 +1,17 @@
+uuid: ecae3f1a-e303-487f-90d2-7c2b15e2eaaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Candidate
+type: candidate
+description: 'Political candidate'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

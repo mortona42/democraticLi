@@ -1,0 +1,23 @@
+uuid: 63316678-9bb1-47d8-a20c-96ceedeffc43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.city_council_district
+  module:
+    - text
+id: node.city_council_district.body
+field_name: body
+entity_type: node
+bundle: city_council_district
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,17 @@
+uuid: c1109bd4-1799-40f7-a923-7a916c25bf23
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Position
+type: position
+description: 'page to compare candidates'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

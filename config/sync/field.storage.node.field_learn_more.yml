@@ -1,0 +1,19 @@
+uuid: 1c1201fa-9d80-4075-8399-ca26275d9674
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_learn_more
+field_name: field_learn_more
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: 17c7d92f-61d1-44bd-922e-5bce8a4f35e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.city_council_district.body
+    - field.field.node.city_council_district.field_display_title
+    - node.type.city_council_district
+  module:
+    - text
+    - user
+id: node.city_council_district.teaser
+targetEntityType: node
+bundle: city_council_district
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

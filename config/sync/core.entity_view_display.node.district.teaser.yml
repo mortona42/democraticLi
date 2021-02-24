@@ -1,0 +1,32 @@
+uuid: 857d130b-e32e-419c-a7dd-2aa7afd1011f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.district.body
+    - field.field.node.district.field_display_title
+    - node.type.district
+  module:
+    - text
+    - user
+id: node.district.teaser
+targetEntityType: node
+bundle: district
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

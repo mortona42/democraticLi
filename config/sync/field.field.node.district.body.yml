@@ -1,0 +1,23 @@
+uuid: 57cbd5b5-bd79-465e-a9b2-0ce877a54fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.district
+  module:
+    - text
+id: node.district.body
+field_name: body
+entity_type: node
+bundle: district
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

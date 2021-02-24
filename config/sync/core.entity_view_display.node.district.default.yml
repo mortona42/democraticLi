@@ -1,0 +1,30 @@
+uuid: 5e1954b0-68a0-4076-957a-1d27c68f515c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.district.body
+    - field.field.node.district.field_display_title
+    - node.type.district
+  module:
+    - text
+    - user
+id: node.district.default
+targetEntityType: node
+bundle: district
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true
