@@ -1,0 +1,48 @@
+uuid: 3223505e-6963-4737-b745-c2e75288ed84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.perspective.body
+    - field.field.node.perspective.field_activity
+    - field.field.node.perspective.field_candidate
+    - field.field.node.perspective.field_display_title
+    - node.type.perspective
+  module:
+    - text
+    - user
+id: node.perspective.default
+targetEntityType: node
+bundle: perspective
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_activity:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_candidate:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

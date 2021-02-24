@@ -1,0 +1,36 @@
+uuid: 379fa4a4-224d-4769-8591-a6b667ccd950
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.perspective.body
+    - field.field.node.perspective.field_activity
+    - field.field.node.perspective.field_candidate
+    - field.field.node.perspective.field_display_title
+    - node.type.perspective
+  module:
+    - text
+    - user
+id: node.perspective.teaser
+targetEntityType: node
+bundle: perspective
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_activity: true
+  field_candidate: true
+  field_display_title: true

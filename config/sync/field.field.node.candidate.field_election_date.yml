@@ -1,0 +1,19 @@
+uuid: b4c9ffcf-c506-45a5-89fb-0390c276e3d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_election_date
+    - node.type.candidate
+id: node.candidate.field_election_date
+field_name: field_election_date
+entity_type: node
+bundle: candidate
+label: 'Election date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

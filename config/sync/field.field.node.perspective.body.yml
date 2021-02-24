@@ -1,0 +1,23 @@
+uuid: 468d373b-a8e0-4a21-ad3c-1e39108bfeb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.perspective
+  module:
+    - text
+id: node.perspective.body
+field_name: body
+entity_type: node
+bundle: perspective
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,19 @@
+uuid: 7d576ba3-d884-4b42-bbe8-ddf571fa5470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opponents
+    - node.type.candidate
+id: node.candidate.field_opponents
+field_name: field_opponents
+entity_type: node
+bundle: candidate
+label: Opponents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

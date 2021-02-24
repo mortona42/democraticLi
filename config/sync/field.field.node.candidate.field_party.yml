@@ -1,0 +1,19 @@
+uuid: 4c20aa82-d660-40a7-844a-5dc02236ba7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_party
+    - node.type.candidate
+id: node.candidate.field_party
+field_name: field_party
+entity_type: node
+bundle: candidate
+label: 'Party affiliation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

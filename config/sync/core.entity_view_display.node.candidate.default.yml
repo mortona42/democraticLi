@@ -1,0 +1,435 @@
+uuid: 19b090f2-dc31-4adb-b017-737f0f7de478
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.candidate.body
+    - field.field.node.candidate.field_comments
+    - field.field.node.candidate.field_contact
+    - field.field.node.candidate.field_display_title
+    - field.field.node.candidate.field_election_date
+    - field.field.node.candidate.field_learn_more
+    - field.field.node.candidate.field_level
+    - field.field.node.candidate.field_opponents
+    - field.field.node.candidate.field_party
+    - field.field.node.candidate.field_portrait
+    - field.field.node.candidate.field_position
+    - field.field.node.candidate.field_previous_positions
+    - field.field.node.candidate.field_years_active
+    - node.type.candidate
+    - views.view.candidate_perspectives
+  module:
+    - comment
+    - layout_builder
+    - link
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: Candidate
+          column_widths: 25-50-25
+        components:
+          a01ef68d-13f3-45c9-8feb-5512b5ce4d2d:
+            uuid: a01ef68d-13f3-45c9-8feb-5512b5ce4d2d
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          7c0544d0-9e15-42f1-ba09-cdb2406eb87a:
+            uuid: 7c0544d0-9e15-42f1-ba09-cdb2406eb87a
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_years_active'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 11
+          e6978a06-c6c0-4f64-9e6a-0dd56bd01bd9:
+            uuid: e6978a06-c6c0-4f64-9e6a-0dd56bd01bd9
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_learn_more'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 12
+          5c5aa7f6-69c4-4e38-807c-90779d94fbbe:
+            uuid: 5c5aa7f6-69c4-4e38-807c-90779d94fbbe
+            region: first
+            configuration:
+              id: 'field_block:node:candidate:field_portrait'
+              label: Portrait
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          65926fbe-90cb-48f3-8d3b-6549c03f29e9:
+            uuid: 65926fbe-90cb-48f3-8d3b-6549c03f29e9
+            region: first
+            configuration:
+              id: 'field_block:node:candidate:field_party'
+              label: 'Party affiliation'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  fences:
+                    fences_field_tag: div
+                    fences_field_classes: ''
+                    fences_field_item_tag: div
+                    fences_field_item_classes: ''
+                    fences_label_tag: div
+                    fences_label_classes: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 5
+          4a4c9d8b-5cd1-4c66-b86a-d92f473f3857:
+            uuid: 4a4c9d8b-5cd1-4c66-b86a-d92f473f3857
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_previous_positions'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 10
+          35d8287f-f5ba-438c-9d26-82ce31d34ac3:
+            uuid: 35d8287f-f5ba-438c-9d26-82ce31d34ac3
+            region: first
+            configuration:
+              id: 'field_block:node:candidate:field_display_title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  fences:
+                    fences_field_tag: div
+                    fences_field_classes: ''
+                    fences_field_item_tag: h2
+                    fences_field_item_classes: ''
+                    fences_label_tag: div
+                    fences_label_classes: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          19aeb6b7-1731-4cbf-9e94-4147b585527a:
+            uuid: 19aeb6b7-1731-4cbf-9e94-4147b585527a
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_election_date'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 8
+          ac7b8d05-f303-4332-9b48-776e9dff14f4:
+            uuid: ac7b8d05-f303-4332-9b48-776e9dff14f4
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_opponents'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 6
+          841399f6-8040-4763-890f-7eb35b1eb316:
+            uuid: 841399f6-8040-4763-890f-7eb35b1eb316
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: Notifications
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 2
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 9
+          28929dec-d445-4743-b1b8-251f21051065:
+            uuid: 28929dec-d445-4743-b1b8-251f21051065
+            region: third
+            configuration:
+              id: 'inline_block:basic'
+              label: 'Recent Activity/Tweets'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 1
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+          822dc7c5-3fdd-42cf-bbed-5c7d98d7676e:
+            uuid: 822dc7c5-3fdd-42cf-bbed-5c7d98d7676e
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:candidate:field_comments'
+              formatter:
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+                type: comment_default
+            additional: {  }
+            weight: 7
+          d74ae577-ae18-431d-9e20-107a806902e0:
+            uuid: d74ae577-ae18-431d-9e20-107a806902e0
+            region: first
+            configuration:
+              id: 'field_block:node:candidate:field_contact'
+              label: Contact
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings:
+                  fences:
+                    fences_field_tag: div
+                    fences_field_classes: ''
+                    fences_field_item_tag: div
+                    fences_field_item_classes: ''
+                    fences_label_tag: div
+                    fences_label_classes: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 13
+          e1cfc4c9-5067-4d54-bc62-5f493a00e3bd:
+            uuid: e1cfc4c9-5067-4d54-bc62-5f493a00e3bd
+            region: second
+            configuration:
+              id: 'views_block:candidate_perspectives-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 6
+          47b9d41e-5a19-4990-8e3a-0ea58c8393e4:
+            uuid: 47b9d41e-5a19-4990-8e3a-0ea58c8393e4
+            region: second
+            configuration:
+              id: 'field_block:node:candidate:field_position'
+              label: Position
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings:
+                  fences:
+                    fences_field_tag: div
+                    fences_field_classes: ''
+                    fences_field_item_tag: div
+                    fences_field_item_classes: ''
+                    fences_label_tag: div
+                    fences_label_classes: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.candidate.default
+targetEntityType: node
+bundle: candidate
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comments:
+    weight: 111
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: second
+  field_contact:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_election_date:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_learn_more:
+    weight: 108
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_level:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_opponents:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: second
+  field_party:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: second
+  field_previous_positions:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_years_active:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true
+  field_portrait: true

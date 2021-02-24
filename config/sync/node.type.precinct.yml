@@ -1,0 +1,17 @@
+uuid: f1210c23-9701-4b8f-9d9d-256ce1cfec2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Precinct
+type: precinct
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
