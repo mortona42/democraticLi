@@ -1,0 +1,19 @@
+uuid: cc2b28b3-8747-46e6-84b8-bf9de89ece64
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_city_council_district
+field_name: field_city_council_district
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

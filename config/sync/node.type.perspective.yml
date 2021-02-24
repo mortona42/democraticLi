@@ -1,0 +1,17 @@
+uuid: cb4e1f6d-9a29-4697-a545-dafe9173d886
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: perspective
+type: perspective
+description: 'user opinion article'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

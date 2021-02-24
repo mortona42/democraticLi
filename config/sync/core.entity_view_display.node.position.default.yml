@@ -1,0 +1,30 @@
+uuid: 22ef7085-dbc7-422f-8d6b-a96c068d9f12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.position.body
+    - field.field.node.position.field_display_title
+    - node.type.position
+  module:
+    - text
+    - user
+id: node.position.default
+targetEntityType: node
+bundle: position
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

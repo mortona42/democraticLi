@@ -1,0 +1,34 @@
+uuid: 8b7b8e64-67e0-4fbb-a33d-9de7b8383d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.precinct.body
+    - field.field.node.precinct.field_city_council_district
+    - field.field.node.precinct.field_display_title
+    - node.type.precinct
+  module:
+    - text
+    - user
+id: node.precinct.teaser
+targetEntityType: node
+bundle: precinct
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_city_council_district: true
+  field_display_title: true

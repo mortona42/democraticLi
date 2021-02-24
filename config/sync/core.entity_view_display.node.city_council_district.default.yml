@@ -1,0 +1,30 @@
+uuid: 931cef2c-487e-4996-bec9-a9e20577f555
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.city_council_district.body
+    - field.field.node.city_council_district.field_display_title
+    - node.type.city_council_district
+  module:
+    - text
+    - user
+id: node.city_council_district.default
+targetEntityType: node
+bundle: city_council_district
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

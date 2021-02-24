@@ -1,0 +1,29 @@
+uuid: f7129160-6f85-4f3f-bb13-c3fdc1f6d39e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.activity
+    - node.type.perspective
+id: node.perspective.field_activity
+field_name: field_activity
+entity_type: node
+bundle: perspective
+label: activity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      activity: activity
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

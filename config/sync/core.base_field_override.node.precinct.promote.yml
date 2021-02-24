@@ -1,0 +1,22 @@
+uuid: a5ac6e2b-615d-4edd-b441-1f59afab44ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.precinct
+id: node.precinct.promote
+field_name: promote
+entity_type: node
+bundle: precinct
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

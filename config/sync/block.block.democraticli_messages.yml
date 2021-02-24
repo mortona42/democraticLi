@@ -1,0 +1,22 @@
+uuid: 1a2a92d9-ff8e-4ca2-8b90-8a2ae94488d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - democraticli
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: democraticli_messages
+theme: democraticli
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 24cad3e6-2f58-43e4-929d-ee3a07ceabc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learn_more
+    - node.type.candidate
+  module:
+    - link
+id: node.candidate.field_learn_more
+field_name: field_learn_more
+entity_type: node
+bundle: candidate
+label: 'Learn more'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

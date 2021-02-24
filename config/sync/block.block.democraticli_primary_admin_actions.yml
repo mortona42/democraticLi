@@ -1,0 +1,20 @@
+uuid: 45bc8c1d-68eb-4d70-8632-3f28613a9cc1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - democraticli
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: democraticli_primary_admin_actions
+theme: democraticli
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

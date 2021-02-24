@@ -1,0 +1,19 @@
+uuid: 90a4b13c-c0b0-4b3e-a677-200fabb97f86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_years_active
+    - node.type.candidate
+id: node.candidate.field_years_active
+field_name: field_years_active
+entity_type: node
+bundle: candidate
+label: 'Years active'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

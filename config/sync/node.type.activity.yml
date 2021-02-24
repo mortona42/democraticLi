@@ -1,0 +1,17 @@
+uuid: d41d1b91-5292-46f9-8335-f8b7c052b194
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Activity
+type: activity
+description: 'Legislative activity.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

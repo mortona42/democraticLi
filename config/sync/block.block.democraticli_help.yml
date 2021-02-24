@@ -1,0 +1,22 @@
+uuid: ecade1bc-7516-4d47-96d3-f04d36f9542d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - democraticli
+_core:
+  default_config_hash: kZCp4h7S-QCo6ENXEyv5I6jbxtIFGrDT8hDDFUfuNjY
+id: democraticli_help
+theme: democraticli
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

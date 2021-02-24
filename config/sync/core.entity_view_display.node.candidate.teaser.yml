@@ -1,0 +1,58 @@
+uuid: c4d7f275-24f0-4cb9-9fa8-fdd3554efaa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candidate.body
+    - field.field.node.candidate.field_comments
+    - field.field.node.candidate.field_contact
+    - field.field.node.candidate.field_display_title
+    - field.field.node.candidate.field_election_date
+    - field.field.node.candidate.field_learn_more
+    - field.field.node.candidate.field_level
+    - field.field.node.candidate.field_opponents
+    - field.field.node.candidate.field_party
+    - field.field.node.candidate.field_portrait
+    - field.field.node.candidate.field_position
+    - field.field.node.candidate.field_previous_positions
+    - field.field.node.candidate.field_years_active
+    - node.type.candidate
+  module:
+    - fences
+    - text
+    - user
+id: node.candidate.teaser
+targetEntityType: node
+bundle: candidate
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 100
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    region: content
+hidden:
+  field_comments: true
+  field_contact: true
+  field_display_title: true
+  field_election_date: true
+  field_learn_more: true
+  field_level: true
+  field_opponents: true
+  field_party: true
+  field_portrait: true
+  field_position: true
+  field_previous_positions: true
+  field_years_active: true
+  links: true
