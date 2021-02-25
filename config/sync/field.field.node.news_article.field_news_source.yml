@@ -1,0 +1,19 @@
+uuid: 69edfd63-2633-4bc3-af2c-eda525075728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_source
+    - node.type.news_article
+id: node.news_article.field_news_source
+field_name: field_news_source
+entity_type: node
+bundle: news_article
+label: 'News source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
