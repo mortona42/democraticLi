@@ -12,11 +12,13 @@ Applied to democracy, we are working together to define the way to govern oursel
 
 
 
+* [**DemocraticLi.com**](https://democraticli.com/)
 * [**Figma**](https://www.figma.com/file/71XyGfXXELYi15oHK9O0mn/Democratli?node-id=0%3A1)
 * [**Trello**](https://trello.com/b/IdnsxNQW/frontend)
 * [**Github**](https://github.com/mortona42/democraticLi)
 * [**Meetup**](https://www.meetup.com/social-tech-projects)
 * [**DemocracyLab**](https://democracylab.org/index/?section=AboutProject&id=640)
+* [**Style Guide**](https://mortona42.github.io/democraticLi/)
 
 # Technology
 This repository contains the Drupal back end for the site. We can quickly create the architecture for the content we want to store and display, with comments on every item.
@@ -28,7 +30,7 @@ The front end is implemented as an independent style guide, split into styles an
 Drupal has a robust API out of the box. You can query for content and related content, limit the fields you're fetching, and sort the results. This makes it easy to use frameworks like react or vue as components on the site or standalone applications.
 
 # Project Installation
-1. Install Docker and Lando.
+1. Install Docker and [Lando](https://docs.lando.dev/basics/installation.html).
 2. Clone the project.
 3. Run `lando start` in the project directory.
 4. Open https://democraticli.lndo.site.
