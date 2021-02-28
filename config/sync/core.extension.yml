@@ -49,12 +49,11 @@ module:
   user: 0
   views_ui: 0
   views: 10
-  standard: 1000
 theme:
   seven: 0
   stable: 0
   classy: 0
   democraticli: 0
-profile: standard
+profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
