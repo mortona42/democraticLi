@@ -1,0 +1,15 @@
+propublica_congress.example:
+  path: '/propublica-congress/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\propublica_congress\Controller\PropublicaCongressController::build'
+  requirements:
+    _permission: 'access content'
+
+propublica_congress.settings_form:
+  path: '/admin/config/system/propublica-congress'
+  defaults:
+    _title: 'Propublica Congress settings'
+    _form: 'Drupal\propublica_congress\Form\SettingsForm'
+  requirements:
+    _permission: 'administer propublica_congress configuration'

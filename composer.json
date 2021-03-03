@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^2.4",
+        "drupal/bootstrap_barrio": "^5.1",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
@@ -37,6 +38,9 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+	    "file-mapping": {
+              "[web-root]/sites/development.services.yml": false
             }
         },
         "installer-paths": {
