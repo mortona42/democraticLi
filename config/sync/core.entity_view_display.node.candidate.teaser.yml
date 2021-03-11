@@ -30,7 +30,7 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 0
+    weight: 1
     settings:
       trim_length: 100
     third_party_settings:
@@ -42,6 +42,21 @@ content:
         fences_label_tag: div
         fences_label_classes: ''
     region: content
+  field_party:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: party-affiliation
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
 hidden:
   field_comments: true
   field_contact: true
@@ -50,7 +65,6 @@ hidden:
   field_learn_more: true
   field_level: true
   field_opponents: true
-  field_party: true
   field_portrait: true
   field_position: true
   field_previous_positions: true

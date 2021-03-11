@@ -14,6 +14,7 @@ global:
       css/components/menu.css: {}
       css/components/messages.css: {}
       css/components/node.css: {}
+      css/components/field-party.css: {}
       css/components/sidebar.css: {}
       css/components/table.css: {}
       css/components/tabs.css: {}
