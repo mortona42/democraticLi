@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update hooks.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function jsonb_requirements($phase) {
+  $requirements = [];
+  return $requirements;
+}

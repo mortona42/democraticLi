@@ -1,0 +1,23 @@
+# Schema for the configuration files of the text module.
+
+field.value.json:
+  type: mapping
+  label: 'Default value'
+  mapping:
+    value:
+      type: text
+      label: Value
+
+field.value.jsonb:
+  type: field.value.json
+
+field.widget.settings.jsonb_textarea:
+  type: mapping
+  label: 'Text area (multiple rows)'
+  mapping:
+    rows:
+      type: integer
+      label: 'Rows'
+    placeholder:
+      type: label
+      label: 'Placeholder'

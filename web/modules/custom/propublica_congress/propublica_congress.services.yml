@@ -1,0 +1,4 @@
+services:
+  propublica_congress.api:
+    class: Drupal\propublica_congress\PropublicaCongressApi
+    arguments: ['@http_client_factory']

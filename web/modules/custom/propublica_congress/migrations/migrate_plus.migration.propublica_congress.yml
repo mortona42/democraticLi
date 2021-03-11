@@ -1,0 +1,91 @@
+id: propublica_congress
+label: JSON feed of congress members.
+migration_group: Propublica
+migration_tags:
+  - propublica congress
+source:
+  # We use the JSON source plugin.
+  plugin: url
+  # define http as data_fetcher_plugin.
+  # data_fetcher_plugin: http
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  headers:
+    X-API-Key: wBYIF2qm7LRTnGxEiQJln3DsoerquoWyQHhDAojU
+  # The data_parser normally limits the fields passed on to the source plugin
+  # to fields configured to be used as part of the migration. To support more
+  # dynamic migrations, the JSON data parser supports including the original
+  # data for the current row. Simply include the 'include_raw_data' flag set
+  # to `true` to enable this. This option is disabled by default to minimize
+  # memory footprint for migrations that do not need this capability.
+  # include_raw_data: true
+  # Flags whether to track changes to incoming data. If TRUE, we will maintain
+  # hashed source rows to determine whether incoming data has changed.
+  # track_changes: true
+  # Copy the example JSON file in artifacts folder to sites/default/files folder.
+  urls:
+    - 'https://api.propublica.org/congress/v1/116/senate/members.json'
+  # An xpath-like selector corresponding to the items to be imported.
+  item_selector: /results/0/members
+  # Under 'fields', we list the data items to be imported. The first level keys
+  # are the source field names we want to populate (the names to be used as
+  # sources in the process configuration below). For each field we're importing,
+  # we provide a label (optional - this is for display in migration tools) and
+  # an xpath for retrieving that value. It's important to note that this xpath
+  # is relative to the elements retrieved by item_selector.
+
+  fields:
+    -
+      name: propublica_id
+      label: 'Propublica id'
+      selector: id
+    -
+      name: position_title
+      label: 'Position title'
+      selector: title
+    -
+      name: first_name
+      label: 'First name'
+      selector: first_name
+    -
+      name: middle_name
+      label: 'Middle name'
+      selector: middle_name
+    -
+      name: last_name
+      label: 'Last name'
+      selector: last_name
+    -
+      name: party
+      label: 'Party'
+      selector: party
+  ids:
+    propublica_id:
+      type: string
+process:
+  type:
+    plugin: default_value
+    default_value: representative
+  title:
+    plugin: concat
+    source:
+      - first_name
+      - middle_name
+      - last_name
+    delimiter: ' '
+  field_propublica_id: propublica_id
+  field_position_title: position_title
+  field_party: party
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - migrate_json_example

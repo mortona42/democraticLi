@@ -1,0 +1,6 @@
+propublica_congress.settings_form:
+  title: Propublica Congress
+  description: Configure Propublica Congress.
+  parent: system.admin_config_system
+  route_name: propublica_congress.settings_form
+  weight: 10
