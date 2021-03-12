@@ -1,0 +1,5 @@
+services:
+  profile_switcher.commands:
+    class: \Drupal\profile_switcher\Commands\ProfileSwitcherCommands
+    tags:
+      - { name: drush.command }
