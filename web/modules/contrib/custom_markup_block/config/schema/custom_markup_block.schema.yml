@@ -1,0 +1,7 @@
+block.settings.custom_markup:
+  type: block_settings
+  label: 'Custom markup block'
+  mapping:
+    markup:
+      type: text_format
+      label: 'Block content'

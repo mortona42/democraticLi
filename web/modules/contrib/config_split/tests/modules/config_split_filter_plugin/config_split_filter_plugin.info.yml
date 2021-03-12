@@ -1,0 +1,13 @@
+name: Config Split 1.x
+type: module
+description: Config Split as it used to be.
+core_version_requirement: ^8.8 || ^9
+package: Testing
+dependencies:
+  - config_filter:config_filter
+  - config_split:config_split
+
+# Information added by Drupal.org packaging script on 2020-11-16
+version: '2.0.0-beta2'
+project: 'config_split'
+datestamp: 1605524411

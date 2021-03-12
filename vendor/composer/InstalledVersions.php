@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '57c722ade9e636d682e1290b3b408411732f8b6d',
+    'reference' => 'fa4bea9228cf33b7ac3f112d0642c0996b875734',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -366,6 +366,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-2.3',
     ),
+    'drupal/config_split' => 
+    array (
+      'pretty_version' => '2.0.0-beta2',
+      'version' => '2.0.0.0-beta2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0-beta2',
+    ),
     'drupal/config_translation' => 
     array (
       'replaced' => 
@@ -611,6 +620,15 @@ private static $installed = array (
       array (
         0 => '9.1.5',
       ),
+    ),
+    'drupal/custom_markup_block' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
     ),
     'drupal/datetime' => 
     array (
@@ -924,7 +942,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '57c722ade9e636d682e1290b3b408411732f8b6d',
+      'reference' => 'fa4bea9228cf33b7ac3f112d0642c0996b875734',
     ),
     'drupal/responsive_image' => 
     array (
@@ -974,6 +992,15 @@ private static $installed = array (
       array (
         0 => '9.1.5',
       ),
+    ),
+    'drupal/simple_page_manager' => 
+    array (
+      'pretty_version' => '1.0.0-alpha1',
+      'version' => '1.0.0.0-alpha1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1.0.0-alpha1',
     ),
     'drupal/stage_file_proxy' => 
     array (

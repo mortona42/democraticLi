@@ -1,0 +1,13 @@
+name: 'Metatag: Simple Page Manager'
+type: module
+description: Provides metatag support for Simple Page Manager.
+core_version_requirement: ^9
+package: SEO
+dependencies:
+  - simple_page_manager:simple_page_manager
+  - metatag:metatag
+
+# Information added by Drupal.org packaging script on 2021-02-05
+version: '1.0.0-alpha1'
+project: 'simple_page_manager'
+datestamp: 1612537580

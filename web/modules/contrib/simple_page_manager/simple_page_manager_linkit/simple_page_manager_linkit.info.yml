@@ -1,0 +1,12 @@
+name: 'Linkit: Simple Page Manager'
+type: module
+description: 'Adds a linkit matcher for pages.'
+core_version_requirement: ^9
+dependencies:
+  - linkit:linkit
+  - simple_page_manager:simple_page_manager
+
+# Information added by Drupal.org packaging script on 2021-02-05
+version: '1.0.0-alpha1'
+project: 'simple_page_manager'
+datestamp: 1612537580

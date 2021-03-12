@@ -1,0 +1,3 @@
+administer pages:
+  title: 'Administer pages'
+  restrict access: true

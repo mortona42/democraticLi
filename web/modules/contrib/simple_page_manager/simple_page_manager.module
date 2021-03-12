@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\simple_page_manager\Entity\Page;
+
+/**
+ * Implements hook_entity_operation().
+ */
+function simple_page_manager_entity_operation(EntityInterface $entity) {
+  $operations = [];
+
+  if ($entity instanceof Page) {
+    $operations['layout'] = [
+      'title' => t('Layout'),
+      'weight' => 5,
+      'url' => Url::fromRoute('layout_builder.page.view', ['page' => $entity->id()]),
+    ];
+  }
+
+  return $operations;
+}
+
+/**
+ * Page URI callback.
+ */
+function page_uri(Page $page) {
+  $id = $page->id();
+  return new Url(
+    "entity.page.${id}.canonical",
+    [
+      'page' => $id,
+    ],
+  );
+}

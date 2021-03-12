@@ -1,0 +1,9 @@
+entity.page.collection:
+  title: 'Pages'
+  parent: system.admin_structure
+  description: 'Manage pages.'
+  route_name: entity.page.collection
+
+simple_page_manager.page:
+  class: Drupal\simple_page_manager\Plugin\Menu\PageMenuLink
+  deriver: \Drupal\simple_page_manager\Plugin\Derivative\PageMenuLink

@@ -1,0 +1,29 @@
+{
+  "name": "drupal/custom_markup_block",
+  "description": "Custom Markup Block",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "keywords": ["php", "blocks", "drupal"],
+  "homepage": "https://www.drupal.org/project/custom_markup_block",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Jeremy Graham",
+      "homepage": "https://www.drupal.org/user/459856",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Manuel Adan (manuel.adan)",
+      "homepage": "https://www.drupal.org/user/516420",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/custom_markup_block",
+    "irc": "irc://irc.freenode.org/drupal-contribute",
+    "source": "https://git.drupalcode.org/project/custom_markup_block"
+  },
+  "suggest": {
+    "drupal/token_filter": "Enables the usage of tokens in the custom markup block content."
+  }
+}

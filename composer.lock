@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc9c780e774045e92d1cd0cefab91dd4",
+    "content-hash": "bed3ec4a530cc1567cebd40ce9770c5d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1631,6 +1631,84 @@
             }
         },
         {
+            "name": "drupal/config_split",
+            "version": "2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_split.git",
+                "reference": "2.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_split-2.0.0-beta2.zip",
+                "reference": "2.0.0-beta2",
+                "shasum": "ca365f987fa1f7ac6c62a1b13b0e5e43b81e4808"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drush/drush": "<10"
+            },
+            "require-dev": {
+                "drupal/config_filter": "^1||^2"
+            },
+            "suggest": {
+                "drupal/chosen": "Chosen uses the Chosen jQuery plugin to make the <select> elements more user-friendly.",
+                "drupal/select2_all": "Applies the Select2 library to all select fields on the site similar to the Chosen module."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta2",
+                    "datestamp": "1605524409",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Bircher",
+                    "homepage": "https://www.drupal.org/u/bircher",
+                    "email": "opensource@fabianbircher.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nuvole Web",
+                    "homepage": "http://nuvole.org",
+                    "email": "info@nuvole.org",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
+                }
+            ],
+            "description": "Configuration filter for importing and exporting extra config",
+            "homepage": "https://www.drupal.org/project/config_split",
+            "keywords": [
+                "Drupal",
+                "configuration",
+                "configuration management"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/config_split",
+                "issues": "https://www.drupal.org/project/issues/config_split",
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.1.5",
             "source": {
@@ -2059,6 +2137,66 @@
             "time": "2021-03-04T14:36:14+00:00"
         },
         {
+            "name": "drupal/custom_markup_block",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/custom_markup_block.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/custom_markup_block-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "0d4e48032830d6431d6376cd148cbce5a86612ac"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "suggest": {
+                "drupal/token_filter": "Enables the usage of tokens in the custom markup block content."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1586002387",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Graham",
+                    "homepage": "https://www.drupal.org/user/459856",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Manuel Adan (manuel.adan)",
+                    "homepage": "https://www.drupal.org/user/516420",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Custom Markup Block",
+            "homepage": "https://www.drupal.org/project/custom_markup_block",
+            "keywords": [
+                "blocks",
+                "drupal",
+                "php"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/custom_markup_block",
+                "issues": "https://www.drupal.org/project/issues/custom_markup_block",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/fences",
             "version": "2.0.0-rc1",
             "source": {
@@ -2191,6 +2329,58 @@
             "homepage": "https://www.drupal.org/project/profile_switcher",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile_switcher"
+            }
+        },
+        {
+            "name": "drupal/simple_page_manager",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_page_manager.git",
+                "reference": "1.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_page_manager-1.0.0-alpha1.zip",
+                "reference": "1.0.0-alpha1",
+                "shasum": "e1d7e535652ff91707d9326529321cfb1027b5a0"
+            },
+            "require": {
+                "drupal/core": "^9"
+            },
+            "require-dev": {
+                "drupal/linkit": "*",
+                "drupal/metatag": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha1",
+                    "datestamp": "1612537578",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
+                },
+                {
+                    "name": "johnzzon",
+                    "homepage": "https://www.drupal.org/user/1868992"
+                }
+            ],
+            "description": "Create exportable custom pages with Layout Builder and blocks.",
+            "homepage": "https://www.drupal.org/project/simple_page_manager",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_page_manager"
             }
         },
         {
@@ -6903,7 +7093,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/fences": 5,
-        "drupal/profile_switcher": 15
+        "drupal/profile_switcher": 15,
+        "drupal/simple_page_manager": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

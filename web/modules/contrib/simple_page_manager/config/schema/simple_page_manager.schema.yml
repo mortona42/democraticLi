@@ -1,0 +1,74 @@
+simple_page_manager.page.*:
+  type: config_entity
+  label: 'Page'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: label
+      label: 'Label'
+    path:
+      type: string
+      label: 'Path'
+    sections:
+      type: sequence
+      sequence:
+        type: layout_builder.section
+    menu:
+      type: mapping
+      label: 'Menu'
+      mapping:
+        title:
+          type: text
+          label: 'Title'
+        description:
+          type: text
+          label: 'Description'
+        weight:
+          type: integer
+          label: 'Weight'
+        enabled:
+          type: boolean
+          label: 'Enabled'
+        expanded:
+          type: boolean
+          label: 'Expanded'
+        menu_name:
+          type: string
+          label: 'Menu name'
+        parent:
+          type: string
+          label: 'Parent'
+    access:
+      type: mapping
+      label: 'Access'
+      mapping:
+        type:
+          type: string
+          label: 'Access type'
+        options:
+          type: simple_page_manager.access.[%parent.type]
+
+simple_page_manager.access.*:
+  type: mapping
+  label: 'Access options'
+
+simple_page_manager.access.role:
+  type: mapping
+  label: 'Role'
+  mapping:
+    role:
+      type: string
+      label: 'Role'
+
+simple_page_manager.access.permission:
+  type: mapping
+  label: 'Permission'
+  mapping:
+    permission:
+      type: string
+      label: 'Permission'
+
+simple_page_manager.access.none:
+  type: sequence
