@@ -1,6 +1,6 @@
-uuid: 8b951fcb-15ad-40f9-81fd-5593d65dd4a9
+uuid: fc286baf-16c9-405e-8bae-5a14b8e4bc06
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -10,8 +10,8 @@ dependencies:
     - democraticli
 id: mainnavigation
 theme: democraticli
-region: header
-weight: -3
+region: primary_menu
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

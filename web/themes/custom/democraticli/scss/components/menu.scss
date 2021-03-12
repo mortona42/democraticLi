@@ -1,0 +1,11 @@
+header[role=banner] {
+  .menu {
+    display: flex;
+  }
+  .menu-item {
+    margin: .5rem 1rem;
+  }
+  .menu-item a {
+    padding: .5rem 1rem;
+  }
+}

@@ -1,4 +1,3 @@
-# Main theme library.
 global:
   js:
     js/democraticli.js: {}

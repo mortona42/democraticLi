@@ -6,9 +6,52 @@ dependencies:
     - field.field.node.position.body
     - field.field.node.position.field_display_title
     - node.type.position
+    - views.view.candidates
   module:
+    - layout_builder
+    - layout_discovery
     - text
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Position
+        components:
+          066e6f17-fd4f-45b5-a05a-2c9fe1e7c327:
+            uuid: 066e6f17-fd4f-45b5-a05a-2c9fe1e7c327
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:position:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          ccd568fb-df37-41c5-82a5-0f422208a2fa:
+            uuid: ccd568fb-df37-41c5-82a5-0f422208a2fa
+            region: content
+            configuration:
+              id: 'views_block:candidates-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
 id: node.position.default
 targetEntityType: node
 bundle: position

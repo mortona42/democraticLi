@@ -1,22 +1,22 @@
-uuid: 928ee0ee-3520-4612-9654-207b7ade6b3f
+uuid: 07674537-a29e-4563-b1d4-34a44f679a24
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.tools
+    - system.menu.account
   module:
     - system
   theme:
     - democraticli
-id: tools
+id: useraccountmenu
 theme: democraticli
-region: sidebar_first
+region: secondary_menu
 weight: 0
 provider: null
-plugin: 'system_menu_block:tools'
+plugin: 'system_menu_block:account'
 settings:
-  id: 'system_menu_block:tools'
-  label: Tools
+  id: 'system_menu_block:account'
+  label: 'User account menu'
   provider: system
   label_display: '0'
   level: 1
