@@ -1,15 +1,16 @@
-uuid: b1312436-6da9-4da9-a85b-f6b832f668ac
+uuid: 503ecca9-b1f8-4b10-bec0-141f4fd40a79
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.position
+    - core.entity_view_mode.node.teaser
+    - node.type.ballot
     - system.menu.main
   module:
     - node
     - user
-id: positions
-label: Positions
+id: elections
+label: Elections
 module: views
 description: ''
 tag: ''
@@ -67,18 +68,10 @@ display:
             next: ››
       style:
         type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -146,7 +139,7 @@ display:
           table: node_field_data
           field: type
           value:
-            position: position
+            ballot: ballot
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -169,6 +162,7 @@ display:
           expose:
             label: ''
           granularity: second
+      title: Elections
       header: {  }
       footer: {  }
       empty: {  }
@@ -191,16 +185,12 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: positions
+      path: elections
       menu:
         type: normal
-        title: positions
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 1
-        context: '0'
+        title: Elections
         menu_name: main
+        weight: -49
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,29 @@
+uuid: 6bdf5d7c-1f23-48de-bbb5-d0299234d6b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ballot_measures
+    - node.type.ballot
+    - node.type.ballot_measure
+id: node.ballot.field_ballot_measures
+field_name: field_ballot_measures
+entity_type: node
+bundle: ballot
+label: 'Ballot measures'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ballot_measure: ballot_measure
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

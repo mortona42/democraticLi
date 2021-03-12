@@ -1,0 +1,32 @@
+uuid: ca389622-8460-47cf-bf03-4898fa9e08cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ballot_measure.body
+    - field.field.node.ballot_measure.field_display_title
+    - node.type.ballot_measure
+  module:
+    - text
+    - user
+id: node.ballot_measure.teaser
+targetEntityType: node
+bundle: ballot_measure
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true

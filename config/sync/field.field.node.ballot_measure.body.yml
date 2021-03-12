@@ -1,0 +1,23 @@
+uuid: 384bb94f-459a-477b-a31e-b2a92793420f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ballot_measure
+  module:
+    - text
+id: node.ballot_measure.body
+field_name: body
+entity_type: node
+bundle: ballot_measure
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: a781e25e-aa53-45cc-83f7-0497e60b7916
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ballot
+id: node.ballot.promote
+field_name: promote
+entity_type: node
+bundle: ballot
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

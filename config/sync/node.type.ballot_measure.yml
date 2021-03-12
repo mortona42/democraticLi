@@ -1,0 +1,17 @@
+uuid: a4df5d3d-75cf-44f3-8818-bb7770d865a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Ballot measure'
+type: ballot_measure
+description: 'An item on the ballot.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

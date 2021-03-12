@@ -1421,6 +1421,75 @@
             "install-path": "../../web/modules/contrib/admin_toolbar"
         },
         {
+            "name": "drupal/backup_migrate",
+            "version": "5.0.0-rc2",
+            "version_normalized": "5.0.0.0-RC2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/backup_migrate.git",
+                "reference": "5.0.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_migrate-5.0.0-rc2.zip",
+                "reference": "5.0.0-rc2",
+                "shasum": "b8c4f5117d9455f4ca652e70135ddc2964fdceef"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "suggest": {
+                "defuse/php-encryption": "Optional encryption of saved backups."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.0-rc2",
+                    "datestamp": "1601316516",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/189065/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "dgorton",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ikit-claw",
+                    "homepage": "https://www.drupal.org/user/3285813"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
+            "description": "Backup and Migrate Drupal Module",
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "support": {
+                "source": "https://git.drupalcode.org/project/backup_migrate",
+                "issues": "https://www.drupal.org/project/issues/backup_migrate",
+                "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
+            },
+            "install-path": "../../web/modules/contrib/backup_migrate"
+        },
+        {
             "name": "drupal/bootstrap_barrio",
             "version": "5.1.4",
             "version_normalized": "5.1.4.0",

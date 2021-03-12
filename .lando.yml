@@ -2,3 +2,36 @@ name: democraticli
 recipe: drupal9
 config:
   webroot: web
+services:
+  appserver:
+    xdebug: "debug,develop"
+    build_as_root:
+      - apt update
+      - apt install -y vim
+      - apt install -y mycli
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://democraticli.lndo.site"
+        LC_ALL: C.UTF-8
+        LANG: C.UTF-8
+  solr:
+    type: solr:8
+    core: democraticli
+    portforward: true
+    config:
+      dir: config/solr
+tooling:
+  mycli:
+    service: appserver
+    description: mycli client
+    cmd: mycli mysql://drupal8:drupal8@database/drupal8
+  xdon:
+    service: appserver
+    description: Enable xdebug for apache.
+    cmd: "docker-php-ext-enable xdebug && /etc/init.d/apache2 reload"
+    user: root
+  xdoff:
+    service: appserver
+    description: Disable xdebug for apache.
+    cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
+    user: root

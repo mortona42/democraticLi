@@ -2,6 +2,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
+  backup_migrate: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -14,6 +15,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  democraticli_custom: 0
   dynamic_page_cache: 0
   editor: 0
   fences: 0

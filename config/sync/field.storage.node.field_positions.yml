@@ -1,0 +1,19 @@
+uuid: 915a48d0-7e2d-45a8-a85a-305db216a6c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_positions
+field_name: field_positions
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

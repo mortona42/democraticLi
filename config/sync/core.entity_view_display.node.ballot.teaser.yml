@@ -1,0 +1,38 @@
+uuid: ac728f2e-661b-4dfa-ac69-d705cb04c83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ballot.body
+    - field.field.node.ballot.field_ballot_measures
+    - field.field.node.ballot.field_display_title
+    - field.field.node.ballot.field_election_date
+    - field.field.node.ballot.field_positions
+    - node.type.ballot
+  module:
+    - text
+    - user
+id: node.ballot.teaser
+targetEntityType: node
+bundle: ballot
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ballot_measures: true
+  field_display_title: true
+  field_election_date: true
+  field_positions: true

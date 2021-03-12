@@ -1,0 +1,22 @@
+uuid: 8ef0ceb1-f93c-4654-bd87-0848ae94ed29
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ballot_measure
+id: node.ballot_measure.promote
+field_name: promote
+entity_type: node
+bundle: ballot_measure
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

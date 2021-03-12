@@ -1,0 +1,30 @@
+uuid: 5adca66f-0548-41a6-8dc3-40a77cecbdc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ballot_measure.body
+    - field.field.node.ballot_measure.field_display_title
+    - node.type.ballot_measure
+  module:
+    - text
+    - user
+id: node.ballot_measure.default
+targetEntityType: node
+bundle: ballot_measure
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_display_title: true
