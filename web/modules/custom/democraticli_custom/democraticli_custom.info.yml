@@ -1,0 +1,4 @@
+name: Democraticli Custom
+description: Customizations for Democraticli site.
+type: module
+core_version_requirement: ^9
