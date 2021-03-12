@@ -1,3 +1,5 @@
 .idea
+*.sql
+*.sql.gz
 settings.local.php
 web/sites/default/files
