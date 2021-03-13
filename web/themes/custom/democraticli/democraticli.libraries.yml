@@ -18,6 +18,8 @@ global:
       css/components/table.css: {}
       css/components/tabs.css: {}
       css/components/buttons.css: {}
+      css/components/candidatesCard.css: {}
+      css/components/expand.css: {}
     layout:
       css/layouts/layout.css: {}
     theme:
