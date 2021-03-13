@@ -1,5 +1,6 @@
 header[role=banner] .menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 header[role=banner] .menu-item {
@@ -8,4 +9,18 @@ header[role=banner] .menu-item {
 
 header[role=banner] .menu-item a {
   padding: .5rem 1rem;
+}
+
+.region-primary-menu,
+.region-secondary-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu--sign-up .menu:last-child a {
+  padding: .5rem 1rem;
+  background-color: #3E5679;
+  color: white;
+  text-decoration: none;
+  border-radius: .2rem;
 }

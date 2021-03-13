@@ -1,0 +1,33 @@
+uuid: 493809cc-a82c-4f73-8893-e748e696a806
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sign-up
+  module:
+    - system
+    - user
+  theme:
+    - democraticli
+id: signup
+theme: democraticli
+region: secondary_menu
+weight: -4
+provider: null
+plugin: 'system_menu_block:sign-up'
+settings:
+  id: 'system_menu_block:sign-up'
+  label: 'Sign up'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

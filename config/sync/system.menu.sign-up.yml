@@ -1,0 +1,8 @@
+uuid: cc355fce-1f44-4259-a236-bb8cf95374a1
+langcode: en
+status: true
+dependencies: {  }
+id: sign-up
+label: 'Sign up'
+description: 'Sign up link'
+locked: false
