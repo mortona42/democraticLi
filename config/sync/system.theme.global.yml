@@ -11,6 +11,6 @@ features:
 logo:
   path: 'public://Screenshot_2021-01-09 Figma(4).png'
   url: ''
-  use_default: false
+  use_default: true
 _core:
   default_config_hash: 9rAU4Pku7eMBQxauQqAgjzlcicFZ2As6zEa6zvTlCB8

@@ -1,0 +1,42 @@
+uuid: a3ad7d9b-16a0-4e75-a857-c8676836abea
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_markup_block
+    - layout_discovery
+id: home
+label: Home
+path: /home
+sections:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: Home
+    components:
+      39b6a30f-fc66-4c7a-878b-41f57c6884e4:
+        uuid: 39b6a30f-fc66-4c7a-878b-41f57c6884e4
+        region: content
+        configuration:
+          id: custom_markup
+          label: Welcome
+          provider: custom_markup_block
+          label_display: '0'
+          markup:
+            format: basic_html
+            value: "<h2>What is DemocraticLi?</h2>\r\n\r\n<p>As a voter, learning everything you need to know to make an informed decision can be overwhelming. DemocraticLi helps you find out about the people and issues you're concerned with and fosters discussion around important topics with other informed users.</p>\r\n\r\n<p><strong><a href=\"https://www.figma.com/file/71XyGfXXELYi15oHK9O0mn/Democratli\">Figma</a></strong></p>\r\n\r\n<p><strong><a href=\"https://github.com/mortona42/democraticLi\">Github</a></strong></p>\r\n\r\n<p><strong><a href=\"https://www.meetup.com/social-tech-projects\">Meetup</a></strong></p>\r\n\r\n<p><strong><a href=\"https://discord.gg/tRUhgeX9\">Discord</a></strong></p>\r\n\r\n<p><strong><a href=\"https://trello.com/b/IdnsxNQW/frontend\">Trello</a></strong></p>\r\n\r\n<p><strong><a href=\"https://www.democracylab.org/projects/640\">DemocracyLab</a></strong></p>\r\n"
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+menu:
+  title: ''
+  description: ''
+  weight: 0
+  enabled: false
+  menu_name: main
+  parent: ''
+  expanded: false
+access:
+  type: none
+  options: {  }

@@ -12,9 +12,9 @@ module:
   comment: 0
   config: 0
   config_filter: 0
-  config_ignore: 0
   contact: 0
   contextual: 0
+  custom_markup_block: 0
   datetime: 0
   dblog: 0
   democraticli_custom: 0
@@ -42,6 +42,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  simple_page_manager: 0
   stage_file_proxy: 0
   system: 0
   taxonomy: 0

@@ -1,11 +1,11 @@
 uuid: d2e62de4-82f5-47c5-9f63-d9e9d7ed2d1a
 name: DemocraticLi
-mail: admin@example.com
+mail: democraticli+mail@andrewmorton.info
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
