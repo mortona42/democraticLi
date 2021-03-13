@@ -17,9 +17,11 @@ dependencies:
     - field.field.node.candidate.field_position
     - field.field.node.candidate.field_previous_positions
     - field.field.node.candidate.field_years_active
+    - image.style.thumbnail
     - node.type.candidate
   module:
     - fences
+    - image
     - text
     - user
 id: node.candidate.teaser
@@ -57,6 +59,22 @@ content:
         fences_field_item_classes: ''
         fences_label_tag: div
         fences_label_classes: ''
+  field_portrait:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
 hidden:
   field_comments: true
   field_contact: true
@@ -65,7 +83,6 @@ hidden:
   field_learn_more: true
   field_level: true
   field_opponents: true
-  field_portrait: true
   field_position: true
   field_previous_positions: true
   field_years_active: true
