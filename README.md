@@ -37,3 +37,19 @@ Drupal has a robust API out of the box. You can query for content and related co
 5. Install Drupal.
 
 At this point, you should have a copy of the site structure, but no content or files. Reach out to a project member on Discord for further help.
+
+# Front End Development
+The theme code is in /web/themes/custom/democraticli.
+
+## CSS
+1. Edit sass files in /web/themes/custom/democraticli/scss.
+2. Run npm install to get sass modules.
+3. Run npm run-script sass-compile to compile sass to css.
+4. Run npm run-script sass-watch to watch for more changes.
+
+## HTML
+1. Inspect the element you want to change and find the template it's using.
+2. Copy the template to /web/themes/custom/democraticli/templates.
+3. Make your changes to the template file.
+4. Clear the cache to load the new template and see your changes.
+
