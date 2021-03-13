@@ -17,6 +17,7 @@ global:
       css/components/sidebar.css: {}
       css/components/table.css: {}
       css/components/tabs.css: {}
+      css/components/title.css: {}
       css/components/buttons.css: {}
     layout:
       css/layouts/layout.css: {}

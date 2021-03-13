@@ -11,6 +11,10 @@ header[role=banner] .menu-item a {
   padding: .5rem 1rem;
 }
 
+header[role=banner] .header-menus {
+  display: flex;
+}
+
 .region-primary-menu,
 .region-secondary-menu {
   display: flex;
