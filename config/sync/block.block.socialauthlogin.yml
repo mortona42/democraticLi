@@ -1,0 +1,25 @@
+uuid: 4187fe07-f5bb-4bc8-b723-d366d3032b99
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_auth
+    - system
+  theme:
+    - democraticli
+id: socialauthlogin
+theme: democraticli
+region: content
+weight: 1
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Social Auth Login'
+  provider: social_auth
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: false
