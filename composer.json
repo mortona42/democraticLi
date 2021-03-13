@@ -32,7 +32,9 @@
         "drupal/simple_page_manager": "^1.0@alpha",
         "drupal/social_api": "^3.0",
         "drupal/social_auth": "^3.0",
+        "drupal/social_auth_facebook": "^3",
         "drupal/social_auth_github": "^3.0",
+        "drupal/social_auth_google": "^3",
         "drupal/stage_file_proxy": "^1.1",
         "drupal/title_field_for_manage_display": "^2.0",
         "drush/drush": "^10.4"

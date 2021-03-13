@@ -1,0 +1,15 @@
+name: Social Auth Facebook
+type: module
+description: 'Social Auth integration for Facebook.'
+core_version_requirement: ^8.8 || ^9
+package: Social
+
+configure: social_auth_facebook.settings_form
+
+dependencies:
+  - social_auth:social_auth
+
+# Information added by Drupal.org packaging script on 2021-01-06
+version: '3.0.0-rc2'
+project: 'social_auth_facebook'
+datestamp: 1609975810

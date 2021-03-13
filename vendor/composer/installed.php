@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '79a5a8eebee5c873290be99573cc41bf4823d5c6',
+    'reference' => 'c802435688f3c1d56d3eccd10f29a15d6081a0b2',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -1001,7 +1001,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '79a5a8eebee5c873290be99573cc41bf4823d5c6',
+      'reference' => 'c802435688f3c1d56d3eccd10f29a15d6081a0b2',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1079,6 +1079,15 @@
       ),
       'reference' => '3.0.1',
     ),
+    'drupal/social_auth_facebook' => 
+    array (
+      'pretty_version' => '3.0.0-rc2',
+      'version' => '3.0.0.0-RC2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0-rc2',
+    ),
     'drupal/social_auth_github' => 
     array (
       'pretty_version' => '3.0.0',
@@ -1087,6 +1096,15 @@
       array (
       ),
       'reference' => '3.0.0',
+    ),
+    'drupal/social_auth_google' => 
+    array (
+      'pretty_version' => '3.0.0-rc1',
+      'version' => '3.0.0.0-RC1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0-rc1',
     ),
     'drupal/stage_file_proxy' => 
     array (
@@ -1360,6 +1378,15 @@
       ),
       'reference' => 'badb01e62383430706433191b82506b6df24ad98',
     ),
+    'league/oauth2-facebook' => 
+    array (
+      'pretty_version' => '2.0.5',
+      'version' => '2.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '14cead7580cab8caace67f5a61ea5d2a8ff213eb',
+    ),
     'league/oauth2-github' => 
     array (
       'pretty_version' => '2.0.0',
@@ -1368,6 +1395,15 @@
       array (
       ),
       'reference' => 'e63d64f3ec167c09232d189c6b0c397458a99357',
+    ),
+    'league/oauth2-google' => 
+    array (
+      'pretty_version' => '3.0.4',
+      'version' => '3.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6b79441f244040760bed5fdcd092a2bda7cf34c6',
     ),
     'masterminds/html5' => 
     array (
