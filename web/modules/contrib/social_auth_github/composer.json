@@ -1,0 +1,42 @@
+{
+    "name": "drupal/social_auth_github",
+    "type": "drupal-module",
+    "description": "Social Auth integration for GitHub.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/social_auth_github",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/social_auth_github",
+        "source": "https://git.drupalcode.org/project/social_auth_github"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url":  "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "league/oauth2-github": "^2.0",
+        "drupal/social_auth": "^3.0",
+        "drupal/core": "^8.8 || ^9"
+    },
+    "require-dev": {
+        "drupal/coder": "^8.3"
+    },
+    "authors": [
+        {
+            "name": "Getulio Valentin Sánchez (gvso)",
+            "email": "valentin2507@gmail.com"
+        },
+        {
+            "name": "Himanshu Dixit (himanshu-dixit)",
+            "email": "hudixt@gmail.com"
+        },
+        {
+            "name": "Christopher C. Wells (wells)",
+            "email": "drupal.org@chris-wells.net"
+        }
+    ]
+}

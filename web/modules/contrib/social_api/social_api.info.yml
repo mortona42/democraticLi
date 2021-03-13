@@ -1,0 +1,11 @@
+name: Social API
+type: module
+description: Common interface for communicating with social networking services.
+package: Social
+core_version_requirement: ^8.8 || ^9
+configure: social_api.admin_config
+
+# Information added by Drupal.org packaging script on 2021-01-04
+version: '3.0.0'
+project: 'social_api'
+datestamp: 1609797839

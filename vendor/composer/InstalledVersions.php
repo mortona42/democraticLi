@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd30596195d9335aa07609d74bbf43b1170c30fb3',
+    'reference' => '79a5a8eebee5c873290be99573cc41bf4823d5c6',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -1014,7 +1014,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd30596195d9335aa07609d74bbf43b1170c30fb3',
+      'reference' => '79a5a8eebee5c873290be99573cc41bf4823d5c6',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1073,6 +1073,33 @@ private static $installed = array (
       array (
       ),
       'reference' => '1.0.0-alpha1',
+    ),
+    'drupal/social_api' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
+    ),
+    'drupal/social_auth' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.1',
+    ),
+    'drupal/social_auth_github' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
     ),
     'drupal/stage_file_proxy' => 
     array (
@@ -1337,6 +1364,24 @@ private static $installed = array (
       ),
       'reference' => '8438dc47a0674e3378bcce893a0a04d79a2c22b3',
     ),
+    'league/oauth2-client' => 
+    array (
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'badb01e62383430706433191b82506b6df24ad98',
+    ),
+    'league/oauth2-github' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e63d64f3ec167c09232d189c6b0c397458a99357',
+    ),
     'masterminds/html5' => 
     array (
       'pretty_version' => '2.7.4',
@@ -1361,6 +1406,15 @@ private static $installed = array (
       array (
         0 => '~2.0',
       ),
+    ),
+    'paragonie/random_compat' => 
+    array (
+      'pretty_version' => 'v9.99.100',
+      'version' => '9.99.100.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
     ),
     'pear/archive_tar' => 
     array (

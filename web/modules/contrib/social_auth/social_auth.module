@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Allows login using different social networking services.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function social_auth_theme() {
+  return [
+    'login_with' => [
+      'variables' => ['social_networks' => NULL, 'destination' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function social_auth_preprocess_login_with(&$variables) {
+  $request = \Drupal::request();
+  $variables['destination'] = $request->get('destination', $variables['destination']);
+  $variables['base_path'] = base_path();
+  $variables['#cache'] = ['contexts' => ['url.query_args:destination']];
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ */
+function social_auth_user_delete(EntityInterface $account) {
+
+  try {
+    $storage = \Drupal::entityTypeManager()
+      ->getStorage('social_auth');
+
+    /** @var \Drupal\social_auth\Entity\SocialAuth[] $socialAuthUser */
+    $users = $storage->loadByProperties([
+      'user_id' => $account->id(),
+    ]);
+
+    if ($users) {
+      $storage->delete($users);
+    }
+
+    $storage->resetCache([$account->id()]);
+  }
+  catch (\Exception $e) {
+    \Drupal::logger('social_auth')
+      ->error('Could not delete Social Auth users for user @uid. Error @error', [
+        '@uid' => $account->id(),
+        '@error' => $e->getMessage(),
+      ]);
+  }
+}
