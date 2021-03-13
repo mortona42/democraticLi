@@ -1,0 +1,12 @@
+auth:
+  social_auth_github:
+    route: social_auth_github.redirect_to_github
+    img_path: modules/contrib/social_auth_github/img/github_logo.svg
+post_login: /user
+redirect_user_form: false
+disable_admin_login: true
+disabled_roles:
+  administrator: '0'
+user_allowed: register
+_core:
+  default_config_hash: 0E8z47ONguVcapiw1PGWDRs6g0NRDCzrym4mP_jcELU
